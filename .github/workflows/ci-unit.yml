@@ -1,4 +1,4 @@
-name: Dashboard unit testing
+name: Unit testing
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: dashboard
+    working-directory: widget
 
 jobs:
   jest:

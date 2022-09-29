@@ -1,4 +1,9 @@
+// import { defineAsyncComponent } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
+
+// const Feedbacks = defineAsyncComponent({
+//   loader: () => import('')
+// })
 
 const Home = () => import('../views/Home/index.vue')
 const Feedbacks = () => import('../views/Feedbacks/index.vue')
@@ -33,7 +38,7 @@ export const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 

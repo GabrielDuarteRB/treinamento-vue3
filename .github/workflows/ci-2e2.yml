@@ -1,4 +1,4 @@
-name: Widget e2e testing
+name: e2e testing
 
 on:
   workflow_dispatch:
