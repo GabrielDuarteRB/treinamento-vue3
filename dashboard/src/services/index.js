@@ -12,7 +12,8 @@ const API_ENVS = {
 }
 
 const httpClient = axios.create({
-    baseURL: API_ENVS[process.env.NODE_ENV] ?? API_ENVS.local
+    // baseURL: API_ENVS[process.env.NODE_ENV] ?? API_ENVS.local
+    baseURL: API_ENVS.production
 })
 
 httpClient.interceptors.request.use(config => {

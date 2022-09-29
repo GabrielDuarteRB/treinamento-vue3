@@ -3,6 +3,11 @@ const colors = require('tailwindcss/colors')
 const pallete = require('./palette')
 
 module.exports = {
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+  ],
   content: ['./src/**/*.html',
   './src/**/*.vue',
   './src/**/*.jsx'],
