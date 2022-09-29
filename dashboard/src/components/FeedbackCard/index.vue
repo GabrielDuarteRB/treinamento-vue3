@@ -54,7 +54,8 @@
     import { getDiffTimeBetweenCurrentDate } from '@/utils/date';
     import palette from '../../../palette';
     import Icon from '../Icon/index.vue';
-    import { wait } from '../../utils/timeOut'
+    import { wait } from '@/utils/timeOut';
+
 
     export default {
         components: { Badge, Icon },
