@@ -11,7 +11,7 @@ jobs:
   cypress:
     defaults:
       run:
-        working-directory: widget
+        working-directory: dashboard
 
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -33,6 +33,6 @@ jobs:
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:	
-          working-directory: widget
+          working-directory: dashboard
           browser: chrome
           headless: true
