@@ -54,8 +54,6 @@
     import { getDiffTimeBetweenCurrentDate } from '@/utils/date';
     import palette from '../../../palette';
     import Icon from '../Icon/index.vue';
-    import wait from '@/utils/timeOut.js';
-
 
     export default {
         components: { Badge, Icon },
@@ -71,7 +69,7 @@
 
             const handleToggle = async () => {
                 state.isClosing = true
-                await wait(250)
+                setTimeout(() => {}, 250)
                 state.isOpen = !state.isOpen
                 state.isClosing = false                
             };
